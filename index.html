@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    </head>
+  <body>  
+<div class="container">
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p class="project" id="description">Project</p> 
+   </header>
+   <form id="survey-form">
+     <fieldset class="middle">
+<div class="group-name">
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder=" Enter your name" required></label>
+</div>    
+<div class="group-email">
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder=" Enter your email" required </label>
+</div>
+<div class="group-age">
+        <label for="age" id="number-label">Age <input id="number" type="number" min="13" max="100" placeholder=" Enter your age" required</label>
+</div>          
+<div class="group-gender">
+  <label for="gender" id="gender-label">Gender</label>
+          <select id="dropdown" required>
+            <option>Select</option>
+            <option>F</option>
+            <option>M</option>
+            <option>Other</option>
+          </select>
+</div>
+</fieldset>
+<fieldset>
+<div class="group-yes/no/somehow">
+  <p class="question">Did you learn html and css?</p>
+      <label><input type="radio" name="radio" value="yes" class="inline" checked>Yes</label>
+   <label><input type="radio" name="radio" value="no" class="inline" >No</label>
+  <label><input type="radio" name="radio" value="somehow" class="inline" >Somehow</label>
+</div>
+</fieldset>
+<fieldset>
+  <div class="group-yes/no/somehow">
+    <p class="question">What would you like to learn next? (multiple choice)</p>
+        <label><input type="checkbox" name="checkbox" value="javascript" class="inline">JavaScript</label>
+   <label><input type="checkbox" name="checkbox" value="scientific-computing" class="inline" >Scientific Computing</label>
+  <label><input type="checkbox" name="checkbox" value="data-analysis" class="inline" >Data Analysis</label>
+<label><input type="checkbox" name="checkbox" value="front-end-development" class="inline" >Front End Development</label>
+   <label><input type="checkbox" name="checkbox" value="back-end-development" class="inline" >Back End Development</label>
+  <label><input type="checkbox" name="checkbox" value="quality-assurance" class="inline" >Quality Assurance</label>
+</div>
+</fieldset>
+<fieldset>
+  <div class="feedback">
+    <label for="text">Feedback</label>
+<textarea id="feedback" name="text" rows="4" cols="50" placeholder="    Write your feedback.">
+</textarea>
+  </div>
+</fieldset>
+<div class="button">
+  <input type="submit" name="submit" id="submit">
+</div>
+   </form>
+    </div>
+  </body>
+</html>
